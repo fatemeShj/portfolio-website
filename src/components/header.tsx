@@ -1,7 +1,6 @@
 "use client";
 
 import { Moon, Sun, Globe } from "lucide-react";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -10,28 +9,16 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 export function Header() {
-  //   const { theme, setTheme } = useTheme();
   const t = useTranslations();
-  const [mounted, setMounted] = useState(false);
-
-  //   useEffect(() => {
-  //     setMounted(true);
-  //   }, []);
 
   const scrollToSection = (id: string) => {
+    if (typeof window === "undefined") return;
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    element?.scrollIntoView({ behavior: "smooth" });
   };
-
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -70,7 +57,6 @@ export function Header() {
               {t("nav.contact")}
             </button>
           </nav>
-
           {/* <div className="flex items-center gap-2">
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
