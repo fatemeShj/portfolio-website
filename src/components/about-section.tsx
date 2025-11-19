@@ -49,7 +49,7 @@ export function AboutSection() {
                 {skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-3 py-1 bg-accent/10 text-accent rounded-full text-sm"
+                    className="px-3 py-1 bg-accent/10 text-primary-destructive rounded-full text-sm"
                   >
                     {skill}
                   </span>

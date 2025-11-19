@@ -47,7 +47,7 @@ export function ExperienceSection() {
                     {exp.period}
                   </span>
                 </div>
-                <p className="text-accent font-medium mb-3">{exp.company}</p>
+                <p className="text-primary font-medium mb-3">{exp.company}</p>
                 <p className="text-muted-foreground leading-relaxed text-pretty">
                   {exp.description}
                 </p>
