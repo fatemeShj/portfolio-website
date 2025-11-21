@@ -14,11 +14,9 @@ export function AboutSection() {
     "Tailwind CSS",
     "Node.js",
     "Git",
-    "Figma",
     "HTML5",
     "CSS3",
     "REST APIs",
-    "GraphQL",
   ];
 
   return (
@@ -35,7 +33,7 @@ export function AboutSection() {
                 {t("about.description")}
               </p>
               <p className="text-muted-foreground leading-relaxed text-pretty">
-                With over 5 years of experience in web development, I specialize
+                With over 7 years of experience in web development, I specialize
                 in building responsive, user-friendly applications that make a
                 difference.
               </p>
