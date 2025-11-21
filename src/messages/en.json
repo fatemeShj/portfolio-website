@@ -15,7 +15,43 @@
     "description": "I'm a passionate frontend developer with expertise in React, Next.js, and TypeScript. I love creating intuitive user interfaces and solving complex problems with elegant solutions."
   },
   "experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "positron": {
+      "title": "Frontend Developer",
+      "company": "Positron",
+      "period": "May 2025 - present ",
+      "description": "Positron Pay operates in the field of payment and financial services, offering solutions such as electronic wallets, credit purchases, and installment-based payments. Its main goal is to simplify financial services for users."
+    },
+    "Manizan": {
+      "title": "Frontend Developer",
+      "company": "Manizan",
+      "period": "Mar 2025 - May 2025",
+      "description": ""
+    },
+    "prima": {
+      "title": "Frontend Developer",
+      "company": "Prima Luxury",
+      "period": "Aug 2024 - Feb 2025",
+      "description": "This company operates in real estate, offering professional services in property sales and marketing, with a focus on delivering a smooth and reliable buying experience for clients."
+    },
+    "hanus": {
+      "title": "Frontend Developer",
+      "company": "Hanus",
+      "period": "Oct 2024 - Nov 2024",
+      "description": ""
+    },
+    "vofour": {
+      "title": "Frontend Developer",
+      "company": "Vofour",
+      "period": "Oct 2024 - Nov 2024",
+      "description": ""
+    },
+    "riwi": {
+      "title": "Frontend Developer",
+      "company": "Riwi",
+      "period": "Dec 2021 - Oct 2023",
+      "description": ""
+    }
   },
   "projects": { "title": "Featured Projects", "viewProject": "View Project" },
   "contact": {

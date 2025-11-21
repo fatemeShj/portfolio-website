@@ -9,7 +9,7 @@ export function ExperienceSection() {
   const experiences = [
     {
       title: "Frontend Developer",
-      company: "positron",
+      company: "Positron",
       period: "May 2025 - present ",
       description: "dummy",
     },
