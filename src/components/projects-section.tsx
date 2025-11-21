@@ -74,17 +74,7 @@ export function ProjectsSection() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex gap-2">
-                    <Button variant="outline" size="sm" asChild>
-                      <a
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </a>
-                    </Button>
+                  <div>
                     <Button size="sm" asChild>
                       <a
                         href={project.demo}
