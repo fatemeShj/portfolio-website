@@ -2,7 +2,7 @@
 
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
@@ -12,26 +12,23 @@ export function ProjectsSection() {
     {
       title: "Positron pay",
       description: "dummy",
-      image: "/modern-ecommerce-website.png",
-      tags: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://example.com",
+      image: "/positron.png",
+      tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
+      demo: "https://positronpay.com",
     },
     {
-      title: "Positron pay",
+      title: "Prima Luxury",
       description: "dummy",
-      image: "/modern-ecommerce-website.png",
-      tags: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://example.com",
+      image: "/prima.png",
+      tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
+      demo: "https://offplan.primaluxury.com/",
     },
     {
-      title: "Positron pay",
+      title: "Hanus",
       description: "dummy",
-      image: "/modern-ecommerce-website.png",
-      tags: ["Next.js", "TypeScript", "Stripe", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://example.com",
+      image: "/hanus.png",
+      tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
+      demo: "https://hanusart.ir",
     },
   ];
 
