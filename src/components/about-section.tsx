@@ -7,16 +7,27 @@ export function AboutSection() {
   const t = useTranslations();
 
   const skills = [
-    "React",
-    "Next.js",
     "TypeScript",
-    "JavaScript",
+    "React.js",
+    "Next.js",
+    "Vite",
     "Tailwind CSS",
+    "shadcn/ui",
+    "Radix UI",
+    "React Hook Form",
+    "Zod",
+    "TanStack Query (React Query)",
+    "Next-Intl (Internationalization)",
+    "Responsive Design",
+    "UI/UX Logic",
     "Node.js",
+    "Express",
+    "MongoDB",
+    "PostgreSQL",
+    "RESTful APIs",
+    "Zustand",
+    "Axios",
     "Git",
-    "HTML5",
-    "CSS3",
-    "REST APIs",
   ];
 
   return (
