@@ -11,21 +11,24 @@ export function ProjectsSection() {
   const projects = [
     {
       title: "Positron pay",
-      description: "dummy",
+      description:
+        "Positron Pay offers e-wallets, credit, and installment payment solutions to simplify finance for users.",
       image: "/positron.png",
       tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
       demo: "https://positronpay.com",
     },
     {
       title: "Jabalrayan",
-      description: "dummy",
+      description:
+        "A company showcase website introducing technology and food products, presenting them clearly for users.",
       image: "/jabal.png",
       tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
       demo: "https://jabalrayan.com/",
     },
     {
       title: "Prima Luxury",
-      description: "dummy",
+      description:
+        "A real estate website showcasing off-plan properties, providing detailed information and specifications for each home.",
       image: "/prima.png",
       tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
       demo: "https://offplan.primaluxury.com/",
