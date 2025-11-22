@@ -17,19 +17,26 @@ export function ProjectsSection() {
       demo: "https://positronpay.com",
     },
     {
+      title: "Jabalrayan",
+      description: "dummy",
+      image: "/jabal.png",
+      tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
+      demo: "https://jabalrayan.com/",
+    },
+    {
       title: "Prima Luxury",
       description: "dummy",
       image: "/prima.png",
       tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
       demo: "https://offplan.primaluxury.com/",
     },
-    {
-      title: "Hanus",
-      description: "dummy",
-      image: "/hanus.png",
-      tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
-      demo: "https://hanusart.ir",
-    },
+    // {
+    //   title: "Hanus",
+    //   description: "dummy",
+    //   image: "/hanus.png",
+    //   tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
+    //   demo: "https://hanusart.ir",
+    // },
   ];
 
   return (
