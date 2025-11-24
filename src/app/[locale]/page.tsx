@@ -15,7 +15,7 @@ export default function HomePage() {
       <Header />
       <HeroSection />
       <AboutSection />
-      <ExperienceSection />
+      {/* <ExperienceSection /> */}
       <ProjectsSection />
       <ContactSection />
       <Footer />
