@@ -43,11 +43,6 @@ export function AboutSection() {
               <p className="text-muted-foreground leading-relaxed mb-6 text-pretty">
                 {t("about.description")}
               </p>
-              <p className="text-muted-foreground leading-relaxed text-pretty">
-                With over 7 years of experience in web development, I specialize
-                in building responsive, user-friendly applications that make a
-                difference.
-              </p>
             </div>
 
             <Card className="p-6">
