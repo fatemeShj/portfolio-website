@@ -28,7 +28,7 @@ export function Header() {
             onClick={() => scrollToSection("hero")}
             className="text-lg font-semibold hover:text-accent transition-colors"
           >
-            Portfolio
+            {/* Fatemeh */}
           </button>
 
           <nav className="hidden md:flex items-center gap-8">
