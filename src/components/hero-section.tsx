@@ -1,76 +1,54 @@
 "use client";
 
-import { Github, Linkedin, Mail } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { ProfileCard } from "@/components/profile-card";
+
+const stats = [
+  { value: "+8", label: "YEARS OF\nEXPERIENCE" },
+  { value: "+50", label: "PROJECTS\nCOMPLETED" },
+  { value: "+10", label: "WORLDWIDE\nCLIENTS" },
+];
 
 export function HeroSection() {
-  const t = useTranslations();
-
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center pt-16"
+      className="min-h-screen flex items-center justify-center pt-28 pb-16 px-4"
+      style={{
+        backgroundImage: "url('/Pattern.png')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-muted-foreground mb-4 animate-fade-in-up">
-            {t("hero.greeting")}
-          </p>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in-up text-balance">
-            Fatemeh Shojaei
-          </h1>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl text-muted-foreground mb-8 animate-fade-in-up text-balance">
-            {t("hero.title")}
-          </h2>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto animate-fade-in-up leading-relaxed text-pretty">
-            {t("hero.description")}
-          </p>
+      <div className="max-w-6xl w-full mx-auto flex flex-col lg:flex-row items-center gap-16">
+        <div className="shrink-0">
+          <ProfileCard />
+        </div>
 
-          <div className="flex items-center justify-center gap-4 mb-12 animate-fade-in-up">
-            <Button onClick={scrollToContact} size="lg">
-              {t("nav.contact")}
-            </Button>
-            <Button variant="outline" size="lg" asChild>
-              <a href="#projects">{t("nav.projects")}</a>
-            </Button>
+        <div className="flex-1 flex flex-col gap-6">
+          <div>
+            <h1
+              className="font-black leading-none tracking-tight"
+              style={{ fontSize: "clamp(3rem, 8vw, 7rem)" }}
+            >
+              FRONTEND
+            </h1>
+            <h1
+              className="font-black leading-none tracking-tight text-primary"
+              style={{ fontSize: "clamp(3rem, 8vw, 6rem)" }}
+            >
+              DEVELOPER
+            </h1>
           </div>
 
-          <div className="flex items-center justify-center gap-6 animate-fade-in-up">
-            <a
-              href="https://github.com/fatemeShj"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Github className="h-6 w-6" />
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/fatemeh-shojaei-3929aa18a/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Linkedin className="h-6 w-6" />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-
-            <a
-              href="mailto:fatemeeshojaeii@gmail.com"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              <Mail className="h-6 w-6" />
-              <span className="sr-only">Email</span>
-            </a>
-          </div>
+          <p className="text-muted-foreground leading-relaxed max-w-xl">
+            focus on clean architecture, performance optimization, and creating
+            smooth, intuitive user experiences. During the first four years of
+            my career, I worked with .NET and SQL, which gave me strong backend
+            understanding. This background helps me approach frontend
+            development with better structure, efficiency, and clearer
+            integration with backend systems.
+          </p>
         </div>
       </div>
     </section>
