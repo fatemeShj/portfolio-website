@@ -12,7 +12,7 @@ const tagIcons: Record<string, string> = {
   Redux: "/tech/redux.svg",
   Tailwind: "/tech/tailwind.svg",
 };
-
+//
 const CARD_BG = "oklch(0.12 0.03 145)";
 const GRADIENT_BORDER = `linear-gradient(${CARD_BG}, ${CARD_BG}) padding-box, linear-gradient(135deg, oklch(0.62 0.22 145) 0%, #ffffff 100%) border-box`;
 
