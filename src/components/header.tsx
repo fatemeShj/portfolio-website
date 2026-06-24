@@ -62,39 +62,47 @@ export function Header() {
   };
 
   return (
-    <header className="fixed top-6 left-0 right-0 z-50 flex justify-center pointer-events-none">
-      <div className="flex items-end gap-4 pointer-events-auto">
+    <header className="fixed top-4 sm:top-6 left-0 right-0 z-50 flex justify-center pointer-events-none px-2">
+      <div
+        className="flex items-end gap-2 sm:gap-4 pointer-events-auto px-4 sm:px-6 pt-3 pb-2 rounded-2xl"
+        style={{
+          background: "oklch(0.12 0.03 145 / 0.85)",
+          border: "1px solid oklch(0.25 0.05 145 / 0.5)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+        }}
+      >
         {navItems.map(({ id, label, icon: Icon }) => {
           const isActive = activeSection === id;
           return (
             <button
               key={id}
               onClick={() => scrollToSection(id)}
-              className="flex flex-col items-center gap-2 cursor-pointer"
+              className="flex flex-col items-center gap-1 sm:gap-2 cursor-pointer"
             >
               <div
                 style={{
                   padding: "2px",
-                  borderRadius: "20px",
+                  borderRadius: "14px",
                   background: isActive ? GRADIENT_BORDER : "transparent",
                 }}
               >
                 <div
-                  className="w-[78px] h-[78px] flex items-center justify-center"
+                  className="w-[52px] h-[52px] sm:w-[78px] sm:h-[78px] flex items-center justify-center"
                   style={{
                     background: BOX_BG,
-                    borderRadius: "18px",
+                    borderRadius: "12px",
                   }}
                 >
                   <Icon
-                    className="h-8 w-8"
+                    className="h-5 w-5 sm:h-8 sm:w-8"
                     style={{ color: isActive ? "#ffffff" : INACTIVE_ICON }}
                   />
                 </div>
               </div>
 
               <span
-                className="text-[11px] tracking-wide"
+                className="text-[9px] sm:text-[11px] tracking-wide"
                 style={{
                   color: isActive ? "#ffffff" : INACTIVE_LABEL,
                   fontWeight: isActive ? 700 : 500,
