@@ -23,7 +23,7 @@ const projects = [
       "A stylish e-commerce platform offering a curated collection of clothing, footwear, bags, accessories, and home décor — delivering a seamless shopping experience for a premium lifestyle.",
     image: "/abrisham.png",
     tags: ["Next.js", "Node.js", "React.js", "TypeScript", "Tailwind"],
-    demo: "#",
+    demo: "https://abrishamgallery.com/",
   },
   {
     title: "Positron Pay",
